@@ -1,4 +1,5 @@
 <%= form_with url: "/users/", model: @user do |form| %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <div>
     <%= form.label "Your username:" %><br>
     <%= form.text_field :username %>
@@ -17,4 +18,5 @@
   <div>
     <%= form.submit %>
   </div>
+
 <% end %>
