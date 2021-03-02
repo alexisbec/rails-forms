@@ -1,17 +1,20 @@
-<%# <%= form_with do |form| %>
-<%# <form accept-charset="UTF-8" action="/" method="post">
-  <input name="authenticity_token" type="hidden" value="J7CBxfHalt49OSHp27hblqK20c9PgwJ108nDHX/8Cts=" placeholder="First name "/>
-</form>
+<%= form_with url: "/users/", model: @user do |form| %>
+  <div>
+    <%= form.label "Your username:" %><br>
+    <%= form.text_field :username %>
+  </div>
 
+  <div>
+    <%= form.label "Your email:" %><br>
+    <%= form.email_field :email %>
+  </div>
+
+  <div>
+    <%= form.label "Your password:" %><br>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
 <% end %>
-<%# 
-
-<form action="users#create" method="POST" accept-charset="UTF-8">
-  <%# <label for="fname">First name:</label> %>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-   <label for="lname">Password:</label>
-  <input type="password" id="password" name="password"><br><br>
-  <input type="submit" value="Submit">
-</form>
