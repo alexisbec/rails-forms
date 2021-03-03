@@ -8,11 +8,12 @@ This is a basic project that consists of building a simple form to obtain a user
 - Rubocop
 
 To Run: 
-- Clone this repository.
+- Clone this repository by clicking on the green button at the top menu labeled "Code", then clicking the paper holder sign to copy it.
 - Open the project folder where the repository was downloaded. 
 - In your terminal, run the command -- bundle install. This will install all the required dependencies
-- Thereafter,  run the migrations. To do this, while in the project root folder, run the command: rails db:migrate.
-- Now you can start the server with: rails server
+- Thereafter, run the migrations. To do this, while in the project root folder, run the command: rails db:migrate.
+- Now you can start the server with: rails server.
+- To open the application in the browser, visit http://localhost:3000.
 
 
 # Authors
