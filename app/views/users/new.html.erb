@@ -1,0 +1,36 @@
+<%= form_for @user do |f| %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <%= f.label :name %><br>
+  <%= f.text_field :username %><br>
+  <%= f.label :Email %><br><br>
+  <%= f.text_field :email %><br>
+  
+  <%= f.label :password %><br>
+  <%= f.password_field :password %><br>
+  
+  <%= f.submit  %>
+<% end %>
+
+<%# <%= form_tag @user do |f| %>
+  <%# <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>"> %>
+  <%# <%= f.label :name %>
+  <%# <%= f.text_field :username %>
+  <%# <%= f.label :Email %>
+  <%# <%= f.text_field :email %> 
+  
+  <%# <%= f.label :password %>
+  <%# <%= f.password_field :password %>
+  
+  <%# <%= f.submit  %> 
+<%# <% end %> 
+
+<%# <form action="users_path" method="post" accept-charset="UTF-8">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>
+
+  <%# <label for="uname">Username:</label><br> %>
+  <%# <input type="text" id="uname" name="uname"><br> %>
+  <%# <label for="email">Email:</label><br> %>
+  <%# <input type="email" id="email" name="email"> %>
+  <%# <label for="password">Password:</label><br> %>
+  <%# <input type="password" id="password" name="password"> %>
+<%# </form>  %>

@@ -1,0 +1,22 @@
+<%= form_with model: @user do |form| %>
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <div>
+    <%= form.label "Your username:" %><br>
+    <%= form.text_field :username %>
+  </div>
+
+  <div>
+    <%= form.label "Your email:" %><br>
+    <%= form.email_field :email %>
+  </div>
+
+  <div>
+    <%= form.label "Your password:" %><br>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+
+<% end %>
